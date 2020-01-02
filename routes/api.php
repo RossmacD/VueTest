@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Customer;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +12,4 @@ use App\Customer;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('/customer/{customer}',function(Customer $customer){
-    return $customer;
-});
+Route::apiResource('/customer','CustomerController');
