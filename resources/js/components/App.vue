@@ -1,9 +1,21 @@
+
+
 <template>
-    <h1>This is my App</h1>
+    <div>
+        <Navbar></Navbar>
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import Navbar from './Navbar.vue'
+
     export default {
         name: "App",
+        components:{
+            Navbar
+        }
     }
 </script>
+
